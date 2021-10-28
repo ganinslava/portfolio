@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+button,
+button:focus,
+input,
+input:focus {
+  border: 0;
+  outline: none;
+  cursor: pointer; }
+
+img {
+  width: 100%; }
+
+* {
+  background-size: cover; }
+
+a, button {
+  cursor: pointer; }
+
+body > * {
+  width: 100%; }
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0; }
+
+table {
+  border-collapse: collapse; }
+
+.wpcf7 .ajax-loader, .wpcf7-response-output {
+  display: none; }
+
+/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,601 @@
+.get-plan {
+	padding-bottom: vw(160px);
+	background: #e9e4da;
+	position: relative;
+
+	@include bkp(md) {
+		padding-bottom: vwm(120px);
+	}
+
+	@include bkp(sm) {
+		padding-bottom: 0;
+	}
+
+	@include bkp(xs) {
+		padding-bottom: 0;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: vw(130px);
+		height: vw(63px);
+		background: url('../img/get-plan-top-gear.png');
+		background-size: 100% 100%;
+		top: 0;
+		left: vw(150px);
+
+		@include bkp(md) {
+			width: vwm(130px);
+			height: vwm(63px);
+			top: 0;
+			left: vwm(100px);
+		}
+
+		@include bkp(sm) {
+			width: vwt(102px);
+  			height: vwt(49.4px);
+  			top: 0;
+  			left: vwt(10px);
+		}
+
+		@include bkp(xs) {
+			width: vws(102px);
+  			height: vws(49.4px);
+  			top: 0;
+  			left: vws(10px);
+		}
+	}
+	
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: vw(130px);
+		height: vw(63px);
+		background: url('../img/get-plan-bottom-gear.png');
+		background-size: 100% 100%;
+	    bottom: vw(155px);
+    	right: vw(165px);
+
+    	@include bkp(md) {
+	    	width: vwm(130px);
+			height: vwm(63px);
+			bottom: vwm(115px);
+			right: vwm(100px);
+    	}
+
+    	@include bkp(sm) {
+    		width: vwt(87.84px);
+			height: vwt(42.57px);
+			bottom: 0;
+			right: vwt(10px);
+    	}
+
+    	@include bkp(xs) {
+    		width: vws(87.84px);
+			height: vws(42.57px);
+			bottom: 0;
+			right: vws(10px);
+    	}
+	}
+}
+
+.get-plan_inner {
+	padding-left: vw(222px);
+	padding-right: vw(120px);
+
+	width: 100%;
+	height: vw(604px);
+	background: url('../img/get-plan-bkg.png');
+	background-size: 100% 100%;
+
+	@include clearfix;
+
+	@include bkp(md) {
+		padding-left: vwm(65px);
+		padding-right: vwm(65px);
+		height: vwm(629px);
+		background: url('../img/get-plan-1024-bkg.png');
+		background-size: 100% 100%;
+	}
+
+	@include bkp(sm) {
+		padding-right: vwt(30px);
+		padding-left: vwt(30px);
+		height: vwt(840px);
+		background: url('../img/get-plan-tablet-bkg.png');
+		background-size: 100% 100%;
+	}
+
+	@include bkp(xs) {
+		padding-right: vws(16px);
+		padding-left: vws(16px);
+		height: vws(828px);
+		background: #a99982;
+	}
+}
+
+.get-plan_left {
+	float: left;
+    width: 50%;
+    margin-top: vw(164px);
+
+    @include bkp(md) {
+    	margin-top: vwm(115px);
+    }
+
+    @include bkp(sm) {
+    	width: 100%;
+    	float: none;
+    	padding-top: vwt(80px);
+    	margin-top: 0;
+    }
+
+    @include bkp(xs) {
+    	width: 100%;
+    	float: none;
+    	padding-top: vws(80px);
+    	margin-top: 0;
+    }
+}
+
+.get-plan_title {
+    margin-bottom: vw(39px);
+
+	font-family: Inter;
+	font-size: vw(45px);
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+
+	@include bkp(md) {
+		margin-bottom: vwm(48px);
+		font-size: vwm(45px);
+	}
+
+	@include bkp(sm) {
+		margin-bottom: vwt(48px);
+		font-size: vwt(40px);
+	}
+
+	@include bkp(xs) {
+		margin-bottom: vws(32px);
+		font-size: vws(30px);
+	}
+}
+
+.get-plan_p {
+	font-family: Inter;
+	font-size: vw(18px);
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.45;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+
+	@include bkp(md) {
+		font-size: vwm(18px);
+	}
+
+	@include bkp(sm) {
+		font-size: vwt(20px);
+	}
+
+	@include bkp(xs) {
+		font-size: vws(14px);
+	}
+}
+
+.get-plan_right {
+	float: right;
+    width: 50%;
+	margin-top: vw(120px);
+	padding-left: vw(55px);
+
+	@include bkp(md) {
+		margin-top: vwm(100px);
+		padding-left: 0;
+	}
+
+	@include bkp(sm) {
+		float: none;
+		width: 100%;
+		margin-top: vwt(48px);
+		padding-left: 0;
+	}
+
+	@include bkp(xs) {
+		float: none;
+		width: 100%;
+		margin-top: vws(44px);
+		padding-left: 0;
+	}
+}
+
+.get-plan_form {
+	input {
+		display: block;
+		width: vw(482px);
+		height: vw(68px);
+		background: url('../img/get-plan-input-bkg.png');
+		background-size: 100% 100%;
+		padding-left: vw(20px);
+		margin-bottom: vw(17px);
+
+		font-family: Inter;
+		font-size: vw(18px);
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.45;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
+
+		@include bkp(md) {
+			width: vwm(432px);
+			height: vwm(68px);
+			padding-left: vwm(25px);
+			margin-bottom: vwm(16px);
+			font-size: vwm(18px);
+		}
+
+		@include bkp(sm) {
+			width: 100%;
+			height: vwt(66px);
+			padding-left: vwt(25px);
+			margin-bottom: vwt(16px);
+			font-size: vwt(16px);
+		}
+
+		@include bkp(xs) {
+			width: 100%;
+			height: vws(64px);
+			padding-left: vws(24px);
+			margin-bottom: vws(16px);
+			font-size: vws(14px);
+		}
+
+		&::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+			color:    #ffffff;;
+		}
+		&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			color:    #ffffff;
+			opacity:  1;
+		}
+		&::-moz-placeholder { /* Mozilla Firefox 19+ */
+			color:    #ffffff;
+			opacity:  1;
+		}
+		&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color:    #ffffff;
+		}
+		&::-ms-input-placeholder { /* Microsoft Edge */
+			color:    #ffffff;
+		}
+		&::placeholder { /* Most modern browsers support this now. */
+			color:    #ffffff;
+		}
+	}
+
+	button[type="submit"] {
+		display: block;
+		width: vw(483px);
+		height: vw(68px);
+	    margin-top: vw(25px);
+	    margin-bottom: vw(15px);
+
+		font-family: Inter;
+		font-size: vw(18px);
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.45;
+		letter-spacing: normal;
+		text-align: center;
+		color: #ffffff;
+
+		@include bkp(md) {
+			width: vwm(432px);
+			height: vwm(68px);
+			margin-top: vwm(24px);
+			margin-bottom: vwm(16px);
+			font-size: vwm(18px);
+		}
+
+		@include bkp(sm) {
+			width: 100%;
+			height: vwt(66px);
+			margin-top: vwt(20px);
+			margin-bottom: vwt(12px);
+			font-size: vwt(16px);
+		}
+
+		@include bkp(xs) {
+			width: 100%;
+			height: vws(64px);
+			margin-top: vws(32px);
+			margin-bottom: vws(16px);
+			font-size: vws(16px);
+		}
+
+		background: url('../img/get-plan-button-bkg.png');
+		background-size: 100% 100%;
+
+		&:hover {
+			background: url('../img/get-plan-button-bkg-hoover.png');
+			background-size: 100% 100%;
+		}
+	}
+
+
+
+
+	input[type="submit"] {
+		display: block;
+		width: vw(483px);
+		height: vw(68px);
+	    margin-top: vw(25px);
+	    margin-bottom: vw(15px);
+
+		font-family: Inter;
+		font-size: vw(18px);
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.45;
+		letter-spacing: normal;
+		text-align: center;
+		color: #ffffff;
+
+		@include bkp(md) {
+			width: vwm(432px);
+			height: vwm(68px);
+			margin-top: vwm(24px);
+			margin-bottom: vwm(16px);
+			font-size: vwm(18px);
+		}
+
+		@include bkp(sm) {
+			width: 100%;
+			height: vwt(66px);
+			margin-top: vwt(20px);
+			margin-bottom: vwt(12px);
+			font-size: vwt(16px);
+		}
+
+		@include bkp(xs) {
+			width: 100%;
+			height: vws(64px);
+			margin-top: vws(32px);
+			margin-bottom: vws(16px);
+			font-size: vws(16px);
+		}
+
+		background: url('../img/get-plan-button-bkg.png');
+		background-size: 100% 100%;
+
+		&:hover {
+			background: url('../img/get-plan-button-bkg-hoover.png');
+			background-size: 100% 100%;
+		}
+	}
+
+	label {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		display: inline-block;
+		vertical-align: top;
+
+		font-family: Inter;
+		font-size: vw(12px);
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.45;
+		letter-spacing: normal;
+		color: #a9afb7;
+
+		@include bkp(md) {
+			font-size: vwm(12px);
+		}
+
+		@include bkp(sm) {
+			font-size: vwt(12px);
+		}
+
+		@include bkp(xs) {
+			font-size: vws(12px);
+			text-align: left;
+			width: 100%;
+		}
+
+		a {
+			font-family: Inter;
+			font-size: vw(12px);
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.45;
+			letter-spacing: normal;
+			color: #a9afb7;
+
+			@include bkp(md) {
+				font-size: vwm(12px);
+			}
+
+			@include bkp(sm) {
+				font-size: vwt(12px);
+			}
+
+			@include bkp(xs) {
+				font-size: vws(12px);
+				text-align: left;
+				width: 100%;
+			}
+		}
+
+		span {
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: vw(-5px);
+				width: vw(24px);
+				height: vw(24px);
+				background-color: #c15926;
+
+				@include bkp(md) {
+					width: vwm(24px);
+					height: vwm(24px);
+				}
+
+				@include bkp(sm) {
+					width: vwt(24px);
+					height: vwt(24px);
+				}
+
+				@include bkp(xs) {
+					width: vws(24px);
+					height: vws(24px);
+					float: left;
+    				position: static;
+				    margin-right: vws(10px);
+			        margin-top: vws(5px);
+				}
+			}
+		}
+
+		span.checked-span:after {
+			content: '';
+			display: block;
+			position: absolute;
+		    top: 0;
+    		left: vw(17px);
+			width: vw(18px);
+			height: vw(13px);
+			background: url('../img/get-plan-checkmark.png');
+			background-size: 100% 100%;
+
+			@include bkp(md) {
+				top: vwm(1px);
+				left: vwm(18px);
+				width: vwm(16px);
+				height: vwm(12px);
+			}
+
+			@include bkp(sm) {
+				top: vwt(3px);
+				left: vwt(18px);
+				width: vwt(16px);
+				height: vwt(12px);
+			}
+
+			@include bkp(xs) {
+				top: vws(11px);
+				left: vws(43px);
+				width: vws(16px);
+				height: vws(12px);
+			}
+		}
+	}
+
+	input[type="checkbox"] {
+		display: inline-block;
+		width: 0;
+		height: 0;
+		background-color: #c15926;
+		position: relative;
+		vertical-align: top;
+		margin-right: vw(27px);
+
+		@include bkp(md) {
+			width: 0;
+			height: 0;
+			margin-right: vwm(27px);
+		}
+		
+		@include bkp(sm) {
+			width: 0;
+			height: 0;
+			margin-right: vwt(27px);
+		}
+
+		@include bkp(xs) {
+			width: 0;
+			height: 0;
+			margin-right: vws(27px);
+			float: left;
+			top: vws(5px);
+		}
+
+
+		/*
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: vw(24px);
+			height: vw(24px);
+			background-color: #c15926;
+
+			@include bkp(md) {
+				width: vwm(24px);
+				height: vwm(24px);
+			}
+
+			@include bkp(sm) {
+				width: vwt(24px);
+				height: vwt(24px);
+			}
+
+			@include bkp(xs) {
+				width: vws(24px);
+				height: vws(24px);
+			}
+		}
+
+		&:checked:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: vw(4px);
+			left: vw(3px);
+			width: vw(18px);
+			height: vw(13px);
+			background: url('../img/get-plan-checkmark.png');
+			background-size: 100% 100%;
+
+			@include bkp(md) {
+				top: vwm(7px);
+				left: vwm(4px);
+				width: vwm(16px);
+				height: vwm(12px);
+			}
+
+			@include bkp(sm) {
+				top: vwt(7px);
+				left: vwt(4px);
+				width: vwt(16px);
+				height: vwt(12px);
+			}
+
+			@include bkp(xs) {
+				top: vws(7px);
+				left: vws(4px);
+				width: vws(16px);
+				height: vws(12px);
+			}
+		}
+		*/
+	}
+}

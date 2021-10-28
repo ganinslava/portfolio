@@ -1,0 +1,298 @@
+.presence {
+	padding-left: vw(120px);
+	padding-right: vw(120px);
+	padding-top: vw(160px);
+	padding-bottom: vw(160px);
+	width: 100%;
+	height: vw(1090px);
+	background-color: #e9e4da;
+	position: relative;
+	@include clearfix;
+
+	@include bkp(md) {
+		padding-left: vwm(65px);
+		padding-right: vwm(65px);
+		padding-top: vwm(120px);
+		padding-bottom: vwm(120px);
+		height: vwm(900px);
+	}
+
+	@include bkp(sm) {
+		padding-left: vwt(30px);
+		padding-right: vwt(30px);
+		padding-top: vwt(50px);
+		padding-bottom: vwt(120px);
+		height: vwt(700px);
+	}
+
+	@include bkp(xs) {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+		padding-bottom: vws(80px);
+		height: auto;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: vw(938px);
+		height: vw(531px);
+		background: url('../img/presence-map-bkg.png');
+		background-size: cover;
+		top: vw(279.5px);
+		left: vw(251px);
+
+		@include bkp(md) {
+			top: vwm(340px);
+			left: vwm(110px);
+			width: vwm(765px);
+			height: vwm(407px);
+			background-size: 100% 100%;
+		}
+
+		@include bkp(sm) {
+		    top: vwt(243px);
+			left: vwt(10px);
+			width: vwt(610px);
+			height: vwt(319px);
+			background-size: 100% 100%;
+		}
+
+		@include bkp(xs) {
+			display: none;
+		}
+	}
+
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		right: 0;
+		top: vw(10px);
+		width: vw(125px);
+		height: vw(330px);
+		background: url('../img/angle.png');
+		background-size: cover;
+
+		@include bkp(md) {
+			top: vwm(-300px);
+			width: vwm(181px);
+			height: vwm(442px);
+			z-index: 9;
+			display: none;
+		}
+
+		@include bkp(sm) {
+			display: none;
+		    top: vwt(-152px);
+			width: vwt(123px);
+			height: vwt(320px);
+		}
+
+		@include bkp(xs) {
+			display: none;
+		}
+	}
+}
+
+.presence_title {
+	font-family: Inter;
+	font-size: vw(45px);
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #01142f;
+
+	span {
+		color: #cba03a;
+	}
+
+	@include bkp(md) {
+		font-size: vwm(45px);
+	}
+
+	@include bkp(sm) {
+		font-size: vwt(40px);
+	}
+
+	@include bkp(xs) {
+		font-size: vws(30px);
+		padding-left: vws(16px);
+		padding-right: vws(16px);
+		margin-bottom: vws(56px);
+	}
+}
+
+.presence_top, .presence_bottom {
+	position: absolute;
+	left: vw(80px);
+
+	font-family: Inter;
+	font-size: vw(18px);
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.45;
+	letter-spacing: normal;
+	text-align: left;
+	color: #01142f;
+	line-height: vw(36px);
+
+	@include bkp(md) {
+		font-size: vwm(18px);
+		left: vwm(66px);
+	}
+
+	@include bkp(sm) {
+		font-size: vwt(14px);
+		left: vwt(32px);
+	}
+
+	@include bkp(xs) {
+		font-size: vws(14px);
+		left: 0;
+	}
+
+	li {
+		display: inline-block;
+		margin-right: vw(20px);
+
+		@include bkp(sm) {
+			margin-right: vwt(12px);
+		    margin-bottom: vwt(5px);
+		}
+
+		@include bkp(xs) {
+			margin-right: vws(12px);
+			margin-bottom: vws(16px);
+		}
+	}
+}
+
+.presence_top {
+	top: vw(40px);
+
+	@include bkp(sm) {
+		top: vwt(32px);
+	}
+
+	@include bkp(xs) {
+		top: vws(48px);
+		left: vws(16px);
+	}
+}
+
+.presence_bottom {
+	bottom: vw(40px);
+
+	@include bkp(sm) {
+		bottom: vwt(32px);
+	}
+
+	@include bkp(xs) {
+		bottom: vws(48px);
+		left: vws(16px);
+	}
+}
+
+.presence_right {
+	position: absolute;
+	top: vw(160px);
+	right: vw(120px);
+	width: vw(482px);
+	height: vw(770px);
+	background: url('../img/presence-right-bkg.png');
+	background-size: cover;
+
+	@include bkp(md) {
+		top: vwm(230px);
+		width: vwm(432px);
+		height: vwm(659px);
+		background-size: 100% 100%;
+	}
+
+	@include bkp(sm) {
+		width: vwt(307px);
+  		height: vwt(503px);
+		right: 0;
+		top: vwt(169px);
+	}
+
+	@include bkp(xs) {
+		width: 100%;
+		height: vws(386px);
+		position: relative;
+		top: auto;
+		right: auto;
+		background: url('../img/presence-mobile-bkg.png');
+		background-size: 100% 100%;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: vw(198px);
+		height: vw(195px);
+		bottom: vw(210px);
+		right: vw(10px);
+		background: url('../img/gear.png');
+		background-size: cover;
+
+		@include bkp(md) {
+			width: vwm(120px);
+			height: vwm(118px);
+			background-size: 100% 100%;
+			right: vwm(15px);
+			bottom: vwm(166px);
+		}
+
+		@include bkp(sm) {
+			width: vwt(74px);
+			height: vwt(70px);
+			background-size: 100% 100%;
+			right: vwt(15px);
+		    bottom: vwt(234px);
+	    }
+
+	    @include bkp(xs) {
+	    	display: none;
+	    }
+	}
+}
+
+
+
+.presence_left_angle {
+	position: absolute;
+	left: 0;
+	bottom: vw(10px);
+	width: vw(125px);
+	height: vw(330px);
+	background: url('../img/angle-left.png');
+	background-size: cover;
+
+	@include bkp(md) {
+	    bottom: vwm(-100px);
+		width: vwm(181px);
+		height: vwm(442px);
+		z-index: 9;
+	}	
+
+	@include bkp(sm) {
+        bottom: vwt(-105px);
+    	z-index: 999;
+		width: vwt(123px);
+		height: vwt(320px);
+	}
+
+	@include bkp(xs) {
+		display: none;
+	}
+} 

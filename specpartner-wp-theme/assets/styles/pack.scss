@@ -1,0 +1,529 @@
+.pack {
+	padding-left: vw(120px);
+	padding-right: vw(120px);
+	//padding-top: vw(160px);
+	padding-bottom: vw(160px);
+	width: 100%;
+	background-color: #e9e4da;
+	position: relative;
+
+	@include bkp(md) {
+		padding-left: vwm(65px);
+		padding-right: vwm(65px);
+		padding-top: vwm(120px);
+		padding-bottom: vwm(120px);
+	}
+
+	@include bkp(sm) {
+		padding-left: 0;
+		padding-right: 0;
+	    padding-top: vwt(80px);
+		padding-bottom: vwt(120px);
+	}
+
+	@include bkp(xs) {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+		padding-bottom: vws(80px);
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		right: 0;
+		top: vw(10px);
+		width: vw(125px);
+		height: vw(330px);
+		background: url('../img/angle.png');
+		background-size: cover;
+		
+		@include bkp(md) {
+			top: vwm(-105px);
+			width: vwm(181px);
+			height: vwm(442px);
+			z-index: 9;
+		}
+
+		@include bkp(sm) {
+	        top: vwt(28px);
+			width: vwt(123px);
+			height: vwt(320px);
+		}
+
+		@include bkp(xs) {
+			display: none;
+		}
+	}
+}
+
+.pack_top {
+	@include clearfix;
+}
+
+.pack_title {
+	float: left;
+
+	font-family: Inter;
+	font-size: vw(45px);
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #01142f;
+
+	width: 45%;
+
+	span {
+		color: #cba03a;
+	}
+
+	@include bkp(md) {
+		font-size: vwm(45px);
+	}
+
+	@include bkp(sm) {
+		float: none;
+		width: 100%;
+		font-size: vwt(40px);
+		padding-left: vwt(30px);
+		padding-right: vwt(30px);
+	}
+
+	@include bkp(xs) {
+		float: none;
+		width: 100%;
+		font-size: vws(30px);
+		padding-left: vws(16px);
+		padding-right: vws(16px);
+	}
+}
+
+.pack_p_right_text {
+	float: right;
+
+	width: 44%;
+
+	font-family: Inter;
+	font-size: vw(28px);
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.35;
+	letter-spacing: normal;
+	text-align: left;
+	color: #01142f;
+
+	padding-top: vw(25px);
+
+	position: relative;
+
+	@include bkp(md) {
+		font-size: vwm(26px);
+		padding-top: vwm(32px);
+	}
+
+	@include bkp(sm) {
+		font-size: vwt(26px);
+		padding-left: vwt(30px);
+		padding-right: vwt(30px);
+	    width: 100%;
+    	padding-top: vwt(24px);
+    	margin-top: vwt(48px);
+    	margin-bottom: vwt(32px);
+	}
+
+	@include bkp(xs) {
+		float: none;
+		font-size: vws(18px);
+		padding-left: vws(16px);
+		padding-right: vws(16px);
+		width: 100%;
+		padding-top: vws(24px);
+		margin-top: vws(48px);
+		margin-bottom: vws(32px);
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: vw(103px);
+		height: vw(2px);
+		top: 0;
+		border-radius: vw(5px);
+		background-color: #c15926;
+
+		@include bkp(md) {
+			width: vwm(103px);
+			height: vwm(2px);
+			border-radius: vwm(5px);
+		}
+
+		@include bkp(sm) {
+			width: vwt(64px);
+			height: vwt(2px);
+			border-radius: vwt(5px);
+			margin-bottom: vwt(32px);
+		}
+
+		@include bkp(xs) {
+			width: vws(48px);
+			height: vws(2px);
+			border-radius: vws(5px);
+			margin-bottom: 0
+		}
+	}
+}
+
+.pack_additional_text {
+	font-family: Inter;
+	font-size: vw(18px);
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.45;
+	letter-spacing: normal;
+	text-align: left;
+	color: #01142f;
+
+	width: 55%;
+
+	margin-top: vw(50px);
+
+	@include bkp(md) {
+		font-size: vwm(18px);
+		margin-top: 0;
+		width: 55%;
+	}
+
+	@include bkp(sm) {
+		font-size: vwt(16px);
+		margin-top: 0;
+		padding-left: vwt(30px);
+		padding-right: vwt(30px);
+		width: 100%;
+	}
+
+	@include bkp(xs) {
+		font-size: vws(16px);
+		margin-top: 0;
+		margin-bottom: vws(31px);
+		padding-left: vws(16px);
+		padding-right: vws(16px);
+		width: 100%;
+	}
+}
+
+.pack_mobile_photo {
+	display: none;
+
+	@include bkp(xs) {
+		display: block;
+		width: vws(320px);
+  		height: vws(340px);
+  		background: url('../img/franchise-pack-photo-mobile.jpg');
+  		background-size: cover;
+	}
+}
+
+.pack_bottom {
+	@include clearfix;
+	position: relative;
+}
+
+.pack_left {
+	float: left;
+	width: 51.25%;
+	height: vw(583px);
+	background: url('../img/pack-bkg.png');
+	background-size: cover;
+
+	position: absolute;
+	bottom: 0;
+
+	@include bkp(md) {
+		width: 51%;
+		height: vwm(423px);
+	}
+
+	@include bkp(sm) {
+		width: 49%;
+  		height: vwt(482px);
+	}
+
+	@include bkp(xs) {
+		float: none;
+		width: 100%;
+		height: vws(450px);
+		background: #a99982;
+		position: relative;
+		bottom: auto;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: vw(122px);
+		height: vw(120.1px);
+		top: vw(25px);
+		left: vw(30px);
+		background: url('../img/gear.png');
+		background-size: cover;
+
+		@include bkp(md) {
+			width: vwm(92px);
+			height: vwm(90px);
+			top: vwm(36px);
+			left: vwm(42px);
+			background-size: 100% 100%;
+		}
+
+		@include bkp(sm) {
+			width: vwt(122px);
+			height: vwt(120px);
+			background-size: 100% 100%;
+		}
+
+		@include bkp(xs) {
+			width: vws(102px);
+  			height: vws(100px);
+			background-size: 100% 100%;
+			top: 63px;
+			left: auto;
+			right: vws(16px);
+		}
+	}
+}
+
+.pack_slider {
+	
+}
+
+.pack_slider_arrows {
+	position: absolute;
+	bottom: vw(80px);
+	z-index: 990;
+
+	@include bkp(sm) {
+		bottom: vwt(80px);
+	}
+
+	@include bkp(xs) {
+	    bottom: vws(64px);
+	    width: 100%;
+	}
+
+	button {
+		width: vw(40px);
+		height: vw(40px);
+		margin-right: vw(14px);
+		border-radius: vw(5px);
+		box-shadow: 0 4px 10px 0 rgba(1, 21, 52, 0.16);
+
+		@include bkp(md) {
+			width: vwm(40px);
+			height: vwm(40px);
+			border-radius: vwm(5px);
+		}
+
+		@include bkp(sm) {
+			width: vwt(40px);
+			height: vwt(40px);
+			border-radius: vwt(5px);
+		}
+
+		@include bkp(xs) {
+			width: vws(40px);
+			height: vws(40px);
+			border-radius: vws(5px);
+		}
+	}
+
+	.pack_slider_left {
+		position: absolute;
+		left: vw(230px);
+		background: url('../img/slider-left.png');
+		background-size: cover;
+
+		@include bkp(md) {
+			left: vwm(152px);
+		}
+
+		@include bkp(sm) {
+			left: vwt(110px);
+		}
+
+		@include bkp(xs) {
+			left: vws(16px);
+		}
+	}
+	.pack_slider_right {
+		position: absolute;
+	    right: vw(-400px);
+		background: url('../img/slider-right.png');
+		background-size: cover;
+
+		@include bkp(md) {
+			right: vwm(-307px);
+		}
+
+		@include bkp(sm) {
+			right: vwt(-250px);
+		}
+
+		@include bkp(xs) {
+			right: vws(16px);
+		}
+	}
+}
+
+
+.pack_slider_counter {
+	font-family: Inter;
+	font-size: vw(18px);
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.45;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+	position: absolute;
+	bottom: vw(47px);
+	left: vw(289px);
+
+	@include bkp(md) {
+		font-size: vwm(14px);
+		bottom: vwm(27px);
+		left: vwm(211px);
+	}
+
+	@include bkp(sm) {
+		font-size: vwt(14px);
+	    bottom: vwt(50px);
+    	left: vwt(163px);
+	}
+
+	@include bkp(xs) {
+		font-size: vws(14px);
+		bottom: vws(34px);
+		left: vws(143px);
+	}
+}
+
+.pack_slide_inner {
+	font-family: Inter;
+	font-size: vw(18px);
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.45;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+
+	padding-top: vw(100px);
+	padding-left: vw(110px);
+	padding-right: vw(55px);
+
+	@include bkp(md) {
+		font-size: vwm(14px);
+		padding-top: vwm(66px);
+		padding-left: vwm(91px);
+		padding-right: vwm(45px);
+	}
+
+	@include bkp(sm) {
+		font-size: vwt(14px);
+		padding-top: vwt(56px);
+		padding-left: vwt(30px);
+		padding-right: vwt(16px);
+	}
+
+	@include bkp(xs) {
+		font-size: vws(14px);
+		padding-top: vws(32px);
+		padding-left: vws(30px);
+		padding-right: vws(30px);
+	}
+
+	li {
+		position: relative;
+		margin-bottom: vw(33px);
+
+		@include bkp(md) {
+			margin-bottom: vwm(33px);
+		}
+
+		@include bkp(sm) {
+			margin-bottom: vwt(24px);
+		}
+
+		@include bkp(xs) {
+			margin-bottom: vws(24px);
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: vw(6px);
+			height: vw(6px);
+			background: url('../img/pack-dot.png');
+			background-size: cover;
+
+			top: vw(10px);
+			left: vw(-20px);
+
+			@include bkp(md) {
+				width: vwm(6px);
+				height: vwm(6px);
+			}
+
+			@include bkp(sm) {
+				width: vwt(6px);
+				height: vwt(6px);
+				top: vwt(8px);
+    			left: vwt(-12px);
+			}
+
+			@include bkp(xs) {
+				width: vws(6px);
+				height: vws(6px);
+			    top: vws(6px);
+    			left: vws(-13px);
+			}
+		}
+	}
+}
+
+
+.pack_photo {
+	float: right;
+	width: 48.75%;
+	height: vw(667px);
+	background: url('../img/franchise-pack-photo.png');
+	background-size: cover;
+
+	@include bkp(md) {
+		width: 49%;
+		height: vwm(493px);
+		background-size: 100% 100%;
+	}
+
+	@include bkp(sm) {
+		width: 51%;
+		height: vwt(532px);
+		background: url('../img/franchise-pack-photo-tablet.png');
+		background-size: 100% 100%;
+	}
+
+	@include bkp(xs) {
+		display: none;
+	}
+}

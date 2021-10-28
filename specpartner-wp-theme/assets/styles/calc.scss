@@ -1,0 +1,1007 @@
+.calc {
+	padding-top: vw(80px);
+	padding-bottom: vw(80px);
+	padding-left: vw(120px);
+	padding-right: vw(120px);
+	background-color: #a99982;
+	position: relative;
+
+	@include bkp(md) {
+		padding-top: vwm(90px);
+		padding-bottom: vwm(120px);
+		padding-left: vwm(65px);
+		padding-right: vwm(65px);
+		overflow: hidden;
+	}
+
+	@include bkp(sm) {
+		padding-top: vwt(80px);
+		padding-bottom: vwt(80px);
+		padding-left: vwt(30px);
+		padding-right: vwt(30px);
+		overflow: hidden;
+	}
+
+	@include bkp(xs) {
+		padding-top: vws(80px);
+		padding-bottom: vws(36px);
+		padding-left: 0;
+		padding-right: 0;
+		overflow: hidden;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		right: vw(0px);
+		top: vw(135px);
+		width: vw(150px);
+		height: vw(500px);
+		background: url('../img/angle-2.png');
+		background-size: cover;
+
+		@include bkp(md) {
+			right: vwm(-100px);
+			top: vwm(42px);
+			width: vwm(220px);
+			height: vwm(629px);
+		}
+
+		@include bkp(sm) {
+			right: 0;
+			top: vwt(-73px);
+			width: vwt(123px);
+			height: vwt(400px);
+		}
+
+		@include bkp(xs) {
+			display: none;
+		}
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: vw(-122px);
+    	bottom: vw(66px);
+		width: vw(198px);
+		height: vw(198px);
+		background: url('../img/gear.png');
+		background-size: cover;
+
+		@include bkp(md) {
+		    width: vwm(115px);
+			height: vwm(114px);
+			left: vwm(-58px);
+		}
+
+		@include bkp(sm) {
+			width: vwt(113px);
+			height: vwt(111px);
+			left: vwt(-70px);
+    		bottom: vwt(508px);
+		}
+
+		@include bkp(xs) {
+			display: none;
+		}
+	}
+}
+
+.calc_title {
+	font-family: Inter;
+	font-size: vw(45px);
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: vw(66px);
+
+	@include bkp(md) {
+		font-size: vwm(45px);
+		margin-bottom: vwm(73px);
+	}
+
+	@include bkp(sm) {
+		font-size: vwt(40px);
+		margin-bottom: vwt(80px);
+	}
+
+	@include bkp(xs) {
+		padding-right: vws(16px);
+		padding-left: vws(16px);
+		font-size: vws(30px);
+		margin-bottom: vws(55px);
+	}
+}
+
+.calc_form {
+	@include clearfix;
+}
+
+.calc_form_wrap {
+	
+}
+
+.calc_form_left {
+	float: left;
+
+	@include bkp(sm) {
+		float: none;
+	}
+
+	@include bkp(xs) {
+		float: none;
+		padding-right: vws(16px);
+		padding-left: vws(16px);
+	}
+}
+
+.calc_form_range_div {
+	width: vw(586px);
+	margin-bottom: vw(35px);
+
+	@include bkp(md) {
+		width: vwm(355px);
+		margin-bottom: vwm(32px);
+	}
+
+	@include bkp(sm) {
+		width: vwt(580px);
+		margin-bottom: vwt(24px);
+	}
+
+	@include bkp(xs) {
+		width: vws(288px);
+		margin-bottom: vws(24px);
+	}
+}
+
+.calc_form_range_entry {
+	font-size: 0;
+	margin-top: vw(16px);
+	margin-bottom: vw(16px);
+	position: relative;
+
+	@include bkp(md) {
+		margin-top: vwm(16px);
+		margin-bottom: vwm(16px);
+	}
+
+	@include bkp(sm) {
+		margin-top: vwt(16px);
+		margin-bottom: vwt(16px);
+	}
+
+	@include bkp(xs) {
+		margin-bottom: vws(16px);
+		margin-top: vws(16px);
+	}
+}
+
+.calc_form_range_entry h4 {
+	display: inline-block;
+	vertical-align: top;
+	font-family: Inter;
+	font-size: vw(28px);
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.35;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+
+	@include bkp(md) {
+		font-size: vwm(27px);
+		display: block;
+	}
+
+	@include bkp(sm) {
+		font-size: vwt(25px);
+		display: block;
+	}
+
+	@include bkp(xs) {
+		font-size: vws(22px);
+		display: block;
+	}
+}
+
+.calc_form_range_entry p {
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+	position: absolute;
+	right: 0;
+	font-family: Inter;
+	font-size: vw(12px);
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.45;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+
+	@include bkp(md) {
+		font-size: vwm(10px);
+		position: static;
+		width: 100%;
+	}
+
+	@include bkp(sm) {
+		font-size: vwt(10px);
+		position: static;
+		width: 100%;
+	}
+
+	@include bkp(xs) {
+		font-size: vws(10px);
+		position: static;
+		width: 100%;
+	}
+}
+
+.calc_form_range_text_input {
+	display: block;
+    width: 100%;
+    padding-left: vw(20px);
+	height: vw(64px);
+	background-color: #c3b8a7;
+	font-family: Inter;
+	font-size: vw(28px);
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.35;
+	letter-spacing: normal;
+	text-align: left;
+	color: #fff;
+
+	@include bkp(md) {
+		height: vwm(64px);
+		font-size: vwm(28px);
+		padding-left: vwm(24px);
+	}
+	
+	@include bkp(sm) {
+		height: vwt(64px);
+		font-size: vwt(25px);
+		padding-left: vwt(24px);
+	}
+
+	@include bkp(xs) {
+		height: vws(64px);
+		font-size: vws(22px);
+		padding-left: vws(16px);
+	}
+
+	&::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	    color:    #ffffff;;
+	}
+	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color:    #ffffff;
+	   opacity:  1;
+	}
+	&::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color:    #ffffff;
+	   opacity:  1;
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	   color:    #ffffff;
+	}
+	&::-ms-input-placeholder { /* Microsoft Edge */
+	   color:    #ffffff;
+	}
+
+	&::placeholder { /* Most modern browsers support this now. */
+	   color:    #ffffff;
+	}
+}
+
+
+
+.calc_form_range_range_input {
+	position: relative;
+    top: vw(-10px);
+
+	width: 100%;
+	-webkit-appearance: none;
+	height: vw(5px);
+   	background-color: #e9e4da;
+   	background: linear-gradient(to right, #d08f6d, #c15926 50%, #e9e4da 50%, #e9e4da);
+
+   	@include bkp(md) {
+   		height: vwm(5px);
+   		top: vwm(-9px);
+   	}
+
+   	@include bkp(sm) {
+   		height: vwt(5px);
+   		top: vwt(-9px);
+   	}
+
+   	@include bkp(xs) {
+   		height: vws(5px);
+   		top: vws(-7px);
+   	}
+    	
+	&:focus {
+		outline: none;
+	}
+
+	&::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        color: #000;
+    }
+
+	&::-webkit-slider-thumb {
+		width: vw(17px);
+  		height: vw(17px);
+  		background: #fff;
+  		border: vw(5px) solid #C15926;
+  		border-radius: 50%;
+		cursor: pointer;
+		-webkit-appearance: none;
+
+		@include bkp(md) {
+			width: vwm(17px);
+  			height: vwm(17px);
+  			border: vwm(5px) solid #C15926;
+		}
+
+		@include bkp(sm) {
+			width: vwt(17px);
+  			height: vwt(17px);
+  			border: vwt(5px) solid #C15926;
+		}
+
+		@include bkp(xs) {
+			width: vws(17px);
+  			height: vws(17px);
+  			border: vws(5px) solid #C15926;
+		}
+	}
+
+	&::-moz-range-thumb {
+		width: vw(14px);
+  		height: vw(14px);
+  		background: #fff;
+  		border: vw(3px) solid #C15926;
+  		border-radius: 50%;
+		cursor: pointer;
+
+		@include bkp(md) {
+			width: vwm(14px);
+  			height: vwm(14px);
+  			border: vwm(3px) solid #C15926;
+		}
+
+		@include bkp(sm) {
+			width: vwt(14px);
+  			height: vwt(14px);
+  			border: vwt(3px) solid #C15926;
+		}
+
+		@include bkp(xs) {
+			width: vws(14px);
+  			height: vws(14px);
+  			border: vws(3px) solid #C15926;
+		}
+	}
+
+	&::-ms-thumb {
+		width: vw(17px);
+  		height: vw(17px);
+  		background: #fff;
+  		border: vw(3px) solid #C15926;
+  		border-radius: 50%;
+		cursor: pointer;
+
+		@include bkp(md) {
+			width: vwm(17px);
+  			height: vwm(17px);
+  			border: vwm(3px) solid #C15926;
+		}
+
+		@include bkp(sm) {
+			width: vwt(17px);
+  			height: vwt(17px);
+  			border: vwt(3px) solid #C15926;
+		}
+
+		@include bkp(xs) {
+			width: vws(17px);
+  			height: vws(17px);
+  			border: vws(3px) solid #C15926;
+		}
+	}
+
+
+	&::-ms-fill-upper {
+	    background-color: #e9e4da;
+	    border: 0;
+	    border-radius: 0;    
+  	}
+  
+	&::-ms-fill-lower {
+		background: linear-gradient(to right, #d08f6d, #e9e4da);;
+		border: 0;
+		border-radius: 0;    
+	}
+  
+  
+	&::-ms-track {
+		height: vw(5px);
+
+		border: none;
+		/* can set to none to
+		 * only see rounded fills */
+
+		background: #e9e4da;
+
+		@include bkp(md) {
+			height: vwm(5px);
+		}
+
+		@include bkp(sm) {
+			height: vwt(5px);
+		}
+
+		@include bkp(xs) {
+			height: vws(5px);
+		}
+	}
+}
+
+.investments .calc_form_text_input_wrapper, .royalties .calc_form_text_input_wrapper {
+	position: relative;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		right: vw(20px);
+		top: vw(25px);
+		width: vw(15px);
+		height: vw(19px);
+		background: url('../img/icon-rub.png');
+		background-size: cover;
+
+		@include bkp(md) {
+			width: vwm(15px);
+			height: vwm(19px);
+			right: vwm(25px);
+			top: vwm(23px);
+		}
+
+		@include bkp(sm) {
+			width: vwt(15px);
+			height: vwt(19px);
+			right: vwt(25px);
+			top: vwt(23px);
+		}
+
+		@include bkp(xs) {
+			width: vws(12px);
+			height: vws(16px);
+			right: vws(25px);
+			top: vws(23px);
+		}
+	}
+}
+
+.lumpsum .calc_form_text_input_wrapper {
+	position: relative;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		right: vw(20px);
+		top: vw(20px);
+		width: vw(20px);
+		height: vw(23px);
+		background: url('../img/icon-percent.png');
+		background-size: cover;
+
+		@include bkp(md) {
+			width: vwm(21px);
+			height: vwm(23px);
+			right: vwm(22px);
+			top: vwm(20px);
+		}
+
+		@include bkp(sm) {
+			width: vwt(21px);
+			height: vwt(23px);
+			right: vwt(22px);
+			top: vwt(20px);
+		}
+
+		@include bkp(xs) {
+			width: vws(18px);
+			height: vws(21px);
+			right: vws(22px);
+			top: vws(20px);
+		}
+	}
+}
+
+
+
+.investments .calc_form_range_notches p {
+	margin-right: vw(40px);
+
+	@include bkp(md) {
+		margin-right: vwm(21px);
+	}
+
+	@include bkp(sm) {
+		margin-right: vwt(57px);
+	}
+
+	@include bkp(xs) {
+		margin-right: vws(9px);
+	}
+}
+
+.lumpsum .calc_form_range_notches p {
+	margin-right: vw(55px);
+
+	@include bkp(md) {
+		margin-right: vwm(31px);
+	}
+
+	@include bkp(sm) {
+		margin-right: vwt(63px);
+	}
+
+	@include bkp(xs) {
+		margin-right: vws(22px);
+	}
+}
+
+.royalties .calc_form_range_notches p {
+	margin-right: vw(92px);
+
+	@include bkp(md) {
+	    margin-right: vwm(52px);
+	}
+
+	@include bkp(sm) {
+		margin-right: vwt(108px);
+	}
+
+	@include bkp(xs) {
+		margin-right: vws(35px);
+	}
+}
+
+.calc_form_range_notches {
+	font-size: 0;
+	margin-top: vw(-10px);
+
+	@include bkp(md) {
+
+	}
+
+	p {
+		display: inline-block;
+		font-family: Inter;
+		font-size: vw(12px);
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.45;
+		letter-spacing: normal;
+		text-align: left;
+		color: #ffffff;
+
+		@include bkp(md) {
+			font-size: vwm(8px);
+		}
+
+		@include bkp(sm) {
+			font-size: vwt(8px);
+		}
+
+		@include bkp(xs) {
+			font-size: vws(8px);
+		}
+	
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.calc_form_right {
+	float: right;
+	width: vw(482px);
+	height: vw(514px);
+	margin-top: vw(50px);
+	padding-left: vw(30px);
+	padding-right: vw(30px);
+	padding-top: vw(75px);
+	padding-bottom: vw(75px);
+	background: url('../img/calc-bkg.png');
+	background-size: cover;
+
+	@include bkp(md) {
+		width: vwm(509px);
+		height: vwm(514px);
+		margin-top: vwm(22px);
+		padding-left: vwm(45px);
+		padding-right: vwm(45px);
+		padding-top: vwm(78px);
+		padding-bottom: vwm(79px);
+	}
+
+	@include bkp(sm) {
+		float: none;
+		width: vwt(580px);
+  		height: vwt(488px);
+  		float: none;
+  		margin-top: vwt(32px);
+  		padding-left: vwt(32px);
+  		padding-right: vwt(32px);
+  		padding-top: vwt(74px);
+  		padding-bottom: vwt(92px);
+		background: url('../img/calc-tablet-bkg.png');
+		background-size: 100% 100%;
+	}
+
+	@include bkp(xs) {
+		float: none;
+		width: vws(320px);
+		height: vws(520px);
+		margin-top: vws(32px);
+		padding-left: vws(15px);
+		padding-right: vws(16px);
+		padding-top: vws(56px);
+		padding-bottom: vws(56px);
+		background:  #e9e4da;
+	}
+}
+
+.calc_form_right_text {
+	margin-bottom: vw(25px);
+	@include horcenter;
+	font-family: Inter;
+	font-size: vw(26px);
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.35;
+	letter-spacing: normal;
+	text-align: left;
+	color: #01142f;
+
+	@include bkp(md) {
+		font-size: vwm(26px);
+	}
+
+	@include bkp(sm) {
+		font-size: vwt(25px);
+		margin-bottom: vwt(46px);
+	}
+
+	@include bkp(xs) {
+		font-size: vws(22px);
+		margin-bottom: vws(32px);
+		text-align: center;
+	}
+}
+
+.calc_form_right {
+	input {
+		display: block;
+		width: vw(418px);
+  		height: vw(64px);
+  		@include horcenter;
+  		margin-bottom: vw(20px);
+  		padding-left: vw(15px);
+
+		font-family: Inter;
+		font-size: vw(18px);
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.45;
+		letter-spacing: normal;
+		text-align: left;
+		color: #a9afb7;
+
+		@include bkp(md) {
+			width: vwm(418px);
+			height: vwm(64px);
+			margin-bottom: vwm(16px);
+			padding-left: vwm(24px);
+			font-size: vwm(18px);
+		}
+
+		@include bkp(sm) {
+			width: vwt(516px);
+  			height: vwt(64px);
+  			margin-bottom: vwt(16px);
+  			padding-left: vwt(24px);
+  			font-size: vwt(18px);
+		}
+
+		@include bkp(xs) {
+			width: vws(288px);
+			height: vws(64px);
+			margin-bottom: vws(16px);
+			padding-left: vws(24px);
+			font-size: vws(14px);
+		}
+	}
+
+	input[type="submit"] {
+		display: block;
+		width: vw(418px);
+		height: vw(68px);
+		@include horcenter;
+		margin-top: vw(30px);
+
+		font-family: Inter;
+		font-size: vw(18px);
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.45;
+		letter-spacing: normal;
+		text-align: center;
+		color: #ffffff;
+
+		@include bkp(md) {
+			width: vwm(418px);
+			height: vwm(68px);
+			margin-top: vwm(24px);
+			font-size: vwm(18px);
+  			background-size: 100% 100%;
+		}
+
+		@include bkp(sm) {
+			width: vwt(516px);
+  			height: vwt(68px);
+  			margin-top: vwt(24px);
+  			font-size: vwt(18px);
+  			background-size: 100% 100%;
+		}
+
+		@include bkp(xs) {
+			width: vws(288px);
+			height: vws(68px);
+			margin-top: vws(24px);
+			font-size: vws(14px);
+			background-size: 100% 100%;
+		}
+
+		background: url('../img/calc-button-bkg.png');
+		background-size: cover;
+
+		&:hover {
+			background: url('../img/calc-button-bkg-hoover.png');
+			background-size: cover;
+		}
+	}
+
+
+
+	label {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		display: inline-block;
+		vertical-align: top;
+
+		font-family: Inter;
+		font-size: vw(12px);
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.45;
+		letter-spacing: normal;
+		color: #a9afb7;
+
+		@include bkp(md) {
+			font-size: vwm(12px);
+		}
+
+		@include bkp(sm) {
+			font-size: vwt(12px);
+		}
+
+		@include bkp(xs) {
+			font-size: vws(12px);
+			text-align: left;
+			width: 100%;
+		}
+
+		a {
+			font-family: Inter;
+			font-size: vw(12px);
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.45;
+			letter-spacing: normal;
+			color: #a9afb7;
+
+			@include bkp(md) {
+				font-size: vwm(12px);
+			}
+
+			@include bkp(sm) {
+				font-size: vwt(12px);
+			}
+
+			@include bkp(xs) {
+				font-size: vws(12px);
+				text-align: left;
+				width: 100%;
+			}
+		}
+
+		span {
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: vw(-5px);
+				width: vw(24px);
+				height: vw(24px);
+				background-color: #c15926;
+
+				@include bkp(md) {
+					width: vwm(24px);
+					height: vwm(24px);
+				}
+
+				@include bkp(sm) {
+					width: vwt(24px);
+					height: vwt(24px);
+				}
+
+				@include bkp(xs) {
+					width: vws(24px);
+					height: vws(24px);
+					float: left;
+    				position: static;
+				    margin-right: vws(10px);
+			        margin-top: vws(5px);
+				}
+			}
+		}
+
+		span.checked-span:after {
+			content: '';
+			display: block;
+			position: absolute;
+		    top: 0;
+    		left: vw(17px);
+			width: vw(18px);
+			height: vw(13px);
+			background: url('../img/get-plan-checkmark.png');
+			background-size: 100% 100%;
+
+			@include bkp(md) {
+				top: vwm(1px);
+				left: vwm(18px);
+				width: vwm(16px);
+				height: vwm(12px);
+			}
+
+			@include bkp(sm) {
+				top: vwt(3px);
+				left: vwt(18px);
+				width: vwt(16px);
+				height: vwt(12px);
+			}
+
+			@include bkp(xs) {
+				top: vws(11px);
+				left: vws(47px);
+				width: vws(16px);
+				height: vws(12px);
+			}
+		}
+	}
+
+	input[type="checkbox"] {
+		display: inline-block;
+		width: 0;
+		height: 0;
+		background-color: #c15926;
+		position: relative;
+		vertical-align: top;
+		margin-right: vw(27px);
+
+		@include bkp(md) {
+			width: 0;
+			height: 0;
+			margin-right: vwm(27px);
+		}
+		
+		@include bkp(sm) {
+			width: 0;
+			height: 0;
+			margin-right: vwt(27px);
+		}
+
+		@include bkp(xs) {
+			width: 0;
+			height: 0;
+			margin-right: vws(27px);
+			float: left;
+			top: vws(5px);
+		}
+
+		/*
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: vw(24px);
+			height: vw(24px);
+			background-color: #c15926;
+
+			@include bkp(md) {
+				width: vwm(24px);
+				height: vwm(24px);
+			}
+
+			@include bkp(sm) {
+				width: vwt(24px);
+				height: vwt(24px);
+			}
+
+			@include bkp(xs) {
+				width: vws(24px);
+				height: vws(24px);
+			}
+		}
+
+		&:checked:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: vw(4px);
+			left: vw(3px);
+			width: vw(18px);
+			height: vw(13px);
+			background: url('../img/get-plan-checkmark.png');
+			background-size: 100% 100%;
+
+			@include bkp(md) {
+				top: vwm(7px);
+				left: vwm(4px);
+				width: vwm(16px);
+				height: vwm(12px);
+			}
+
+			@include bkp(sm) {
+				top: vwt(7px);
+				left: vwt(4px);
+				width: vwt(16px);
+				height: vwt(12px);
+			}
+
+			@include bkp(xs) {
+				top: vws(7px);
+				left: vws(4px);
+				width: vws(16px);
+				height: vws(12px);
+			}
+		}
+		*/
+	}
+}

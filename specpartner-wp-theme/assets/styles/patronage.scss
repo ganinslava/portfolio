@@ -1,0 +1,229 @@
+.patronage {
+	padding-left: vw(120px);
+	padding-right: vw(120px);
+	padding-bottom: vw(85px);//160px
+	background: #e9e4da;
+	position: relative;
+
+	@include bkp(md) {
+		padding-left: vwm(65px);
+		padding-right: vwm(65px);
+		padding-bottom: vwm(100px);//145px
+	}
+
+	@include bkp(sm) {
+		padding-right: vwt(30px);
+		padding-left: vwt(30px);
+		padding-bottom: vwt(80px);//120px
+	}
+
+	@include bkp(xs) {
+		padding-left: vws(16px);
+		padding-right: vws(16px);
+		padding-bottom: vws(80px);
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: vw(192px);
+		width: vw(125px);
+		height: vw(330px);
+		background: url('../img/angle-left.png');
+		background-size: cover;
+
+		@include bkp(md) {
+			top: auto;
+		    bottom: vwm(-90px);
+			width: vwm(181px);
+			height: vwm(442px);
+			z-index: 9;
+		}
+
+		@include bkp(sm) {
+			width: vwt(166px);
+			height: vwt(213.7px);
+  			top: auto;
+  			left: auto;
+  			bottom: vwt(40px);
+  			right: 0;
+  			z-index: 9;
+  			background: url('../img/gear-4.png');
+  			background-size: 100% 100%;
+		}
+
+		@include bkp(xs) {
+			width: vws(55px);
+			height: vws(132px);
+			top: auto;
+			bottom: vws(71px);
+			left: auto;
+			right: 0;
+			background: url('../img/gear-3.png');
+			background-size: 100% 100%;
+		}
+	}
+	
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		right: 0;
+		top: vw(-100px);
+		width: vw(125px);
+		height: vw(330px);
+		background: url('../img/angle.png');
+		background-size: cover;
+
+		@include bkp(md) {
+			top: vwm(-200px);
+			width: vwm(181px);
+			height: vwm(442px);
+		}
+
+		@include bkp(sm) {
+	        top: vwt(-45px);
+			width: vwt(123px);
+			height: vwt(320px);
+		}
+
+		@include bkp(xs) {
+			top: vws(-5px);
+			background-size: 100% 100%;
+			width: vws(82px);
+			height: vws(213px);
+		}
+	}
+}
+
+.patronage_title {
+    margin-bottom: vw(55px);
+
+	font-family: Inter;
+	font-size: vw(45px);
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #01142f;
+
+	@include bkp(md) {
+		font-size: vwm(45px);
+		margin-bottom: vwm(64px);
+	}
+
+	@include bkp(sm) {
+		font-size: vwt(40px);
+		margin-bottom: vwt(64px);
+	}
+
+	@include bkp(xs) {
+		font-size: vws(30px);
+		margin-bottom: vws(56px);
+	}
+
+	span {
+		color: #cba03a;
+	}
+}
+
+.patronage_ul {
+	font-size: 0;
+	text-align: center;
+
+	@include bkp(sm) {
+		text-align: left;
+	}
+}
+
+.patronage_li {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 5%;
+	margin-bottom: vw(50px);
+
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	font-family: Inter;
+	font-size: vw(18px);
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.45;
+	letter-spacing: normal;
+	text-align: left;
+	color: #01142f;
+
+	@include bkp(md) {
+		font-size: vwm(18px);
+		margin-bottom: vwm(48px);
+	}
+
+	@include bkp(sm) {
+		font-size: vwt(16px);
+		margin-right: 7%;
+		width: 46.5%;
+		margin-bottom: vwt(48px);
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+	}
+
+	@include bkp(xs) {
+		width: 100%;
+		display: block;
+		margin-right: 0;
+		margin-bottom: vws(45px);
+		font-size: vws(16px);
+		text-align: center;	
+	}
+}
+
+.patronage_icon {
+	width: vw(88px);
+	height: vw(65px);
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: vw(20px);
+
+    @include bkp(md) {
+    	width: vwm(88px);
+    	height: vwm(65px);
+    	margin-bottom: vwm(30px);
+    }
+
+    @include bkp(sm) {
+    	margin-left: 0;
+    	width: vwt(76px);
+    	height: vwt(56px);
+    	margin-bottom: vwt(30px);
+    }
+
+    @include bkp(xs) {
+    	width: vws(76px);
+    	height: vws(56px);
+    	margin-bottom: vws(24px);
+    }
+}
+
+.patronage_li {
+	@include bkp(xs) {
+		&:nth-child(1) .patronage_icon {
+			margin-left: vws(116px);
+		}
+		&:nth-child(2) .patronage_icon {
+			margin-left: vws(108px);
+		}
+		&:nth-child(3) .patronage_icon {
+			margin-left: vws(108px);
+		}
+	}
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/arsha-gutenberg.iml" filepath="$PROJECT_DIR$/.idea/arsha-gutenberg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gutenberg/.idea/gutenberg.iml" filepath="$PROJECT_DIR$/../gutenberg/.idea/gutenberg.iml" />
+      <module fileurl="file://D:/Udemy - WordPress Development - Create WordPress Themes and Plugins (2016)/Final Version/Files/wp-content/themes/udemy/.idea/udemy.iml" filepath="D:/Udemy - WordPress Development - Create WordPress Themes and Plugins (2016)/Final Version/Files/wp-content/themes/udemy/.idea/udemy.iml" />
+    </modules>
+  </component>
+</project>
